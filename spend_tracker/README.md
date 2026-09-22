@@ -2,8 +2,8 @@
 
 A small Django + Django REST Framework service for logging expenses and getting a spend summary, with JWT auth, filtering, pagination, and a minimal HTML/JS frontend.
 
-**Live demo:** _add your Render URL here after deploying_
-**API docs (Swagger):** `<your-url>/api/docs/`
+**Live demo:** _not deployed yet — deployment steps are below, add the Render URL here once it's live_
+**API docs (Swagger):** `<your-url>/api/docs/` (available once deployed, or locally at `http://localhost:8000/api/docs/`)
 
 ---
 
