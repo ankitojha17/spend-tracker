@@ -1,0 +1,112 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+    background: #f4f5f7;
+    color: #1f2933;
+    margin: 0;
+    padding: 24px;
+}
+
+.container { max-width: 900px; margin: 0 auto; }
+
+h1 { margin-bottom: 4px; }
+.subtitle { color: #616e7c; margin-top: 0; margin-bottom: 24px; }
+
+.card {
+    background: #fff;
+    border: 1px solid #e4e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+}
+
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 4px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #616e7c;
+}
+.tab.active { color: #1f2933; border-bottom-color: #3b82f6; font-weight: 600; }
+
+form { display: flex; flex-direction: column; gap: 10px; }
+
+input, select, button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+button {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover { background: #2563eb; }
+button:disabled { background: #cbd5e1; cursor: not-allowed; }
+
+.hidden { display: none; }
+
+.message { min-height: 20px; font-size: 13px; margin-top: 8px; }
+.message.error { color: #dc2626; }
+.message.success { color: #16a34a; }
+
+.hint { font-size: 12px; color: #9ca3af; }
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.top-bar button { width: auto; padding: 8px 14px; }
+
+.summary-controls, .filter-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+.summary-controls input, .filter-row select, .filter-row input { width: auto; }
+.summary-controls button, .filter-row button { width: auto; }
+
+#summary-output .total { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+#summary-output table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
+#summary-output td, #summary-output th { text-align: left; padding: 6px 4px; border-bottom: 1px solid #e4e7eb; }
+
+.insight {
+    background: #fef3c7;
+    border: 1px solid #fbbf24;
+    color: #92400e;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px 4px; border-bottom: 1px solid #e4e7eb; font-size: 14px; }
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+.pagination button { width: auto; padding: 6px 12px; }
